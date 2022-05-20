@@ -39,6 +39,10 @@ class House
   def malt
     "malt that lay in the"
   end
+
+  def rat
+    "rat that ate the"
+  end
   def recite
     1.upto(12).collect { |i| line(i) }.join("\n")
   end
