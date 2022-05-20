@@ -71,6 +71,10 @@ class House
   def rooster
     "rooster that crowed in the morn that woke the"
   end
+
+  def farmer
+    "farmer sowing his corn that kept the"
+  end
   def recite
     1.upto(12).collect { |i| line(i) }.join("\n")
   end
