@@ -64,6 +64,9 @@ class House
     "man all tattered and torn that kissed the"
   end
 
+  def priest
+    "priest all shaven and shorn that married the"
+  end
   def recite
     1.upto(12).collect { |i| line(i) }.join("\n")
   end
