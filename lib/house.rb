@@ -51,6 +51,10 @@ class House
   def dog
     "dog that worried the"
   end
+
+  def cow
+    "cow with the crumpled horn that tossed the"
+  end
   def recite
     1.upto(12).collect { |i| line(i) }.join("\n")
   end
