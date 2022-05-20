@@ -67,6 +67,10 @@ class House
   def priest
     "priest all shaven and shorn that married the"
   end
+
+  def rooster
+    "rooster that crowed in the morn that woke the"
+  end
   def recite
     1.upto(12).collect { |i| line(i) }.join("\n")
   end
