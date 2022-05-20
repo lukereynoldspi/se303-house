@@ -24,7 +24,7 @@ class House
     when num == 11
       "#{intro} #{farmer} #{rooster} #{priest} #{man} #{maiden} #{cow} #{dog} #{cat} #{rat} #{malt} #{jack}.\n"
     when num == 12
-      "#{intro} horse and the hound and the horn that belonged to the #{farmer} #{rooster} #{priest} #{man} #{maiden} #{cow} #{dog} #{cat} #{rat} #{malt} #{jack}.\n"
+      "#{intro} #{horse} #{farmer} #{rooster} #{priest} #{man} #{maiden} #{cow} #{dog} #{cat} #{rat} #{malt} #{jack}.\n"
     end
   end
 
