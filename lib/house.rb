@@ -16,15 +16,15 @@ class House
     when num == 7
       "#{intro} #{maiden} #{cow} #{dog} #{cat} #{rat} #{malt} #{jack}.\n"
     when num == 8
-      "#{intro} man all tattered and torn that kissed the #{maiden} #{cow} #{dog} #{cat} #{rat} #{malt} #{jack}.\n"
+      "#{intro} #{man} #{maiden} #{cow} #{dog} #{cat} #{rat} #{malt} #{jack}.\n"
     when num == 9
-      "#{intro} priest all shaven and shorn that married the man all tattered and torn that kissed the #{maiden} #{cow} #{dog} #{cat} #{rat} #{malt} #{jack}.\n"
+      "#{intro} priest all shaven and shorn that married the #{man} #{maiden} #{cow} #{dog} #{cat} #{rat} #{malt} #{jack}.\n"
     when num == 10
-      "#{intro} rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the #{maiden} #{cow} #{dog} #{cat} #{rat} #{malt} #{jack}.\n"
+      "#{intro} rooster that crowed in the morn that woke the priest all shaven and shorn that married the #{man} #{maiden} #{cow} #{dog} #{cat} #{rat} #{malt} #{jack}.\n"
     when num == 11
-      "#{intro} farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the #{maiden} #{cow} #{dog} #{cat} #{rat} #{malt} #{jack}.\n"
+      "#{intro} farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the #{man} #{maiden} #{cow} #{dog} #{cat} #{rat} #{malt} #{jack}.\n"
     when num == 12
-      "#{intro} horse and the hound and the horn that belonged to the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the #{maiden} #{cow} #{dog} #{cat} #{rat} #{malt} #{jack}.\n"
+      "#{intro} horse and the hound and the horn that belonged to the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the #{man} #{maiden} #{cow} #{dog} #{cat} #{rat} #{malt} #{jack}.\n"
     end
   end
 
