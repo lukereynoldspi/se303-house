@@ -6,25 +6,25 @@ class House
     when num == 2
       "#{intro} #{malt} #{jack}.\n"
     when num == 3
-      "#{intro} rat that ate the #{malt} #{jack}.\n"
+      "#{intro} #{rat} #{malt} #{jack}.\n"
     when num == 4
-      "#{intro} cat that killed the rat that ate the #{malt} #{jack}.\n"
+      "#{intro} cat that killed the #{rat} #{malt} #{jack}.\n"
     when num == 5
-      "#{intro} dog that worried the cat that killed the rat that ate the #{malt} #{jack}.\n"
+      "#{intro} dog that worried the cat that killed the #{rat} #{malt} #{jack}.\n"
     when num == 6
-      "#{intro} cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the #{malt} #{jack}.\n"
+      "#{intro} cow with the crumpled horn that tossed the dog that worried the cat that killed the #{rat} #{malt} #{jack}.\n"
     when num == 7
-      "#{intro} maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the #{malt} #{jack}.\n"
+      "#{intro} maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the #{rat} #{malt} #{jack}.\n"
     when num == 8
-      "#{intro} man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the #{malt} #{jack}.\n"
+      "#{intro} man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the #{rat} #{malt} #{jack}.\n"
     when num == 9
-      "#{intro} priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the #{malt} #{jack}.\n"
+      "#{intro} priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the #{rat} #{malt} #{jack}.\n"
     when num == 10
-      "#{intro} rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the #{malt} #{jack}.\n"
+      "#{intro} rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the #{rat} #{malt} #{jack}.\n"
     when num == 11
-      "#{intro} farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the #{malt} #{jack}.\n"
+      "#{intro} farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the #{rat} #{malt} #{jack}.\n"
     when num == 12
-      "#{intro} horse and the hound and the horn that belonged to the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the #{malt} #{jack}.\n"
+      "#{intro} horse and the hound and the horn that belonged to the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the #{rat} #{malt} #{jack}.\n"
     end
   end
 
@@ -79,7 +79,7 @@ class House
   def horse
     "horse and the hound and the horn that belonged to the"
   end
-  
+
   def recite
     1.upto(12).collect { |i| line(i) }.join("\n")
   end
