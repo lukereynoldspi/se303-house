@@ -75,6 +75,11 @@ class House
   def farmer
     "farmer sowing his corn that kept the"
   end
+
+  def horse
+    "horse and the hound and the horn that belonged to the"
+  end
+  
   def recite
     1.upto(12).collect { |i| line(i) }.join("\n")
   end
