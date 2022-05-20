@@ -47,6 +47,10 @@ class House
   def cat
     "cat that killed the"
   end
+
+  def dog
+    "dog that worried the"
+  end
   def recite
     1.upto(12).collect { |i| line(i) }.join("\n")
   end
