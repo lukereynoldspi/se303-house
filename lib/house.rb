@@ -55,6 +55,11 @@ class House
   def cow
     "cow with the crumpled horn that tossed the"
   end
+
+  def maiden
+    "maiden all forlorn that milked the"
+  end
+  
   def recite
     1.upto(12).collect { |i| line(i) }.join("\n")
   end
