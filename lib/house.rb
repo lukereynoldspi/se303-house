@@ -43,6 +43,10 @@ class House
   def rat
     "rat that ate the"
   end
+
+  def cat
+    "cat that killed the"
+  end
   def recite
     1.upto(12).collect { |i| line(i) }.join("\n")
   end
