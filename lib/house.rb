@@ -22,9 +22,9 @@ class House
     when num == 10
       "#{intro} #{rooster} #{priest} #{man} #{maiden} #{cow} #{dog} #{cat} #{rat} #{malt} #{jack}.\n"
     when num == 11
-      "#{intro} farmer sowing his corn that kept the #{rooster} #{priest} #{man} #{maiden} #{cow} #{dog} #{cat} #{rat} #{malt} #{jack}.\n"
+      "#{intro} #{farmer} #{rooster} #{priest} #{man} #{maiden} #{cow} #{dog} #{cat} #{rat} #{malt} #{jack}.\n"
     when num == 12
-      "#{intro} horse and the hound and the horn that belonged to the farmer sowing his corn that kept the #{rooster} #{priest} #{man} #{maiden} #{cow} #{dog} #{cat} #{rat} #{malt} #{jack}.\n"
+      "#{intro} horse and the hound and the horn that belonged to the #{farmer} #{rooster} #{priest} #{man} #{maiden} #{cow} #{dog} #{cat} #{rat} #{malt} #{jack}.\n"
     end
   end
 
