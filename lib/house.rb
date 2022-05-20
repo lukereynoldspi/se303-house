@@ -4,7 +4,7 @@ class House
     when num == 1
       "#{intro} #{jack}.\n"
     when num == 2
-      "#{intro} malt that lay in the #{jack}.\n"
+      "#{intro} #{malt} #{jack}.\n"
     when num == 3
       "#{intro} rat that ate the malt that lay in the #{jack}.\n"
     when num == 4
@@ -34,6 +34,10 @@ class House
 
   def jack
     "house that Jack built"
+  end
+
+  def malt
+    "malt that lay in the"
   end
   def recite
     1.upto(12).collect { |i| line(i) }.join("\n")
