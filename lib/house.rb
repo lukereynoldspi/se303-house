@@ -1,30 +1,30 @@
 class House
   def line(num)
-    case
-    when num == 1
+    case num
+    when 1
       "#{intro} #{jack}.\n"
-    when num == 2
+    when 2
       "#{intro} #{malt} #{jack}.\n"
-    when num == 3
+    when 3
       "#{intro} #{rat} #{malt} #{jack}.\n"
-    when num == 4
+    when 4
       "#{intro} #{cat} #{rat} #{malt} #{jack}.\n"
-    when num == 5
+    when 5
       "#{intro} #{dog} #{cat} #{rat} #{malt} #{jack}.\n"
-    when num == 6
+    when 6
       "#{intro} #{cow} #{dog} #{cat} #{rat} #{malt} #{jack}.\n"
-    when num == 7
+    when 7
       "#{intro} #{maiden} #{cow} #{dog} #{cat} #{rat} #{malt} #{jack}.\n"
-    when num == 8
+    when 8
       "#{intro} #{man} #{maiden} #{cow} #{dog} #{cat} #{rat} #{malt} #{jack}.\n"
-    when num == 9
+    when 9
       "#{intro} #{priest} #{man} #{maiden} #{cow} #{dog} #{cat} #{rat} #{malt} #{jack}.\n"
-    when num == 10
+    when 10
       "#{intro} #{rooster} #{priest} #{man} #{maiden} #{cow} #{dog} #{cat} #{rat} #{malt} #{jack}.\n"
-    when num == 11
-      "#{intro} #{farmer} #{rooster} #{priest} #{man} #{maiden} #{cow} #{dog} #{cat} #{rat} #{malt} #{jack}.\n"
-    when num == 12
-      "#{intro} #{horse} #{farmer} #{rooster} #{priest} #{man} #{maiden} #{cow} #{dog} #{cat} #{rat} #{malt} #{jack}.\n"
+    when 11
+      "#{intro} #{horse(num)}#{farmer} #{rooster} #{priest} #{man} #{maiden} #{cow} #{dog} #{cat} #{rat} #{malt} #{jack}.\n"
+    when 12
+      "#{intro} #{horse(num)} #{farmer} #{rooster} #{priest} #{man} #{maiden} #{cow} #{dog} #{cat} #{rat} #{malt} #{jack}.\n"
     end
   end
 
@@ -76,8 +76,10 @@ class House
     "farmer sowing his corn that kept the"
   end
 
-  def horse
-    "horse and the hound and the horn that belonged to the"
+  def horse(num)
+    if num == 12
+      "horse and the hound and the horn that belonged to the"
+    end
   end
 
   def recite
