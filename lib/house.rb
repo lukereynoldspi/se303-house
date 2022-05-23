@@ -2,29 +2,29 @@ class House
   def line(num)
     case num
     when 1
-      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{jack}.\n"
+      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{jack}.\n"
     when 2
-      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{malt}#{jack}.\n"
+      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{malt}#{jack}.\n"
     when 3
-      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{rat}#{malt}#{jack}.\n"
+      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{rat}#{malt}#{jack}.\n"
     when 4
-      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{cat}#{rat}#{malt}#{jack}.\n"
+      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{cat}#{rat}#{malt}#{jack}.\n"
     when 5
-      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{dog}#{cat}#{rat}#{malt}#{jack}.\n"
+      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{dog}#{cat}#{rat}#{malt}#{jack}.\n"
     when 6
-      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{cow}#{dog}#{cat}#{rat}#{malt}#{jack}.\n"
+      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{cow}#{dog}#{cat}#{rat}#{malt}#{jack}.\n"
     when 7
-      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{maiden}#{cow}#{dog}#{cat}#{rat}#{malt}#{jack}.\n"
+      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{maiden}#{cow}#{dog}#{cat}#{rat}#{malt}#{jack}.\n"
     when 8
-      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{man}#{maiden}#{cow}#{dog}#{cat}#{rat}#{malt}#{jack}.\n"
+      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{man}#{maiden}#{cow}#{dog}#{cat}#{rat}#{malt}#{jack}.\n"
     when 9
-      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest}#{man}#{maiden}#{cow}#{dog}#{cat}#{rat}#{malt}#{jack}.\n"
+      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{man}#{maiden}#{cow}#{dog}#{cat}#{rat}#{malt}#{jack}.\n"
     when 10
-      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest}#{man}#{maiden}#{cow}#{dog}#{cat}#{rat}#{malt}#{jack}.\n"
+      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{man}#{maiden}#{cow}#{dog}#{cat}#{rat}#{malt}#{jack}.\n"
     when 11
-      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest}#{man}#{maiden}#{cow}#{dog}#{cat}#{rat}#{malt}#{jack}.\n"
+      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{man}#{maiden}#{cow}#{dog}#{cat}#{rat}#{malt}#{jack}.\n"
     when 12
-      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest}#{man}#{maiden}#{cow}#{dog}#{cat}#{rat}#{malt}#{jack}.\n"
+      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{man}#{maiden}#{cow}#{dog}#{cat}#{rat}#{malt}#{jack}.\n"
     end
   end
 
@@ -64,8 +64,10 @@ class House
     "man all tattered and torn that kissed the "
   end
 
-  def priest
-    "priest all shaven and shorn that married the "
+  def priest(num)
+    if num >= 9
+      "priest all shaven and shorn that married the "
+    end
   end
 
   def rooster(num)
