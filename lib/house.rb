@@ -2,29 +2,29 @@ class House
   def line(num)
     case num
     when 1
-      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{man(num)}#{maiden(num)}#{cow(num)}#{dog(num)}#{cat(num)}#{rat(num)}#{jack}.\n"
+      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{man(num)}#{maiden(num)}#{cow(num)}#{dog(num)}#{cat(num)}#{rat(num)}#{malt(num)}#{jack}.\n"
     when 2
-      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{man(num)}#{maiden(num)}#{cow(num)}#{dog(num)}#{cat(num)}#{rat(num)}#{malt}#{jack}.\n"
+      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{man(num)}#{maiden(num)}#{cow(num)}#{dog(num)}#{cat(num)}#{rat(num)}#{malt(num)}#{jack}.\n"
     when 3
-      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{man(num)}#{maiden(num)}#{cow(num)}#{dog(num)}#{cat(num)}#{rat(num)}#{malt}#{jack}.\n"
+      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{man(num)}#{maiden(num)}#{cow(num)}#{dog(num)}#{cat(num)}#{rat(num)}#{malt(num)}#{jack}.\n"
     when 4
-      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{man(num)}#{maiden(num)}#{cow(num)}#{dog(num)}#{cat(num)}#{rat(num)}#{malt}#{jack}.\n"
+      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{man(num)}#{maiden(num)}#{cow(num)}#{dog(num)}#{cat(num)}#{rat(num)}#{malt(num)}#{jack}.\n"
     when 5
-      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{man(num)}#{maiden(num)}#{cow(num)}#{dog(num)}#{cat(num)}#{rat(num)}#{malt}#{jack}.\n"
+      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{man(num)}#{maiden(num)}#{cow(num)}#{dog(num)}#{cat(num)}#{rat(num)}#{malt(num)}#{jack}.\n"
     when 6
-      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{man(num)}#{maiden(num)}#{cow(num)}#{dog(num)}#{cat(num)}#{rat(num)}#{malt}#{jack}.\n"
+      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{man(num)}#{maiden(num)}#{cow(num)}#{dog(num)}#{cat(num)}#{rat(num)}#{malt(num)}#{jack}.\n"
     when 7
-      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{man(num)}#{maiden(num)}#{cow(num)}#{dog(num)}#{cat(num)}#{rat(num)}#{malt}#{jack}.\n"
+      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{man(num)}#{maiden(num)}#{cow(num)}#{dog(num)}#{cat(num)}#{rat(num)}#{malt(num)}#{jack}.\n"
     when 8
-      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{man(num)}#{maiden(num)}#{cow(num)}#{dog(num)}#{cat(num)}#{rat(num)}#{malt}#{jack}.\n"
+      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{man(num)}#{maiden(num)}#{cow(num)}#{dog(num)}#{cat(num)}#{rat(num)}#{malt(num)}#{jack}.\n"
     when 9
-      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{man(num)}#{maiden(num)}#{cow(num)}#{dog(num)}#{cat(num)}#{rat(num)}#{malt}#{jack}.\n"
+      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{man(num)}#{maiden(num)}#{cow(num)}#{dog(num)}#{cat(num)}#{rat(num)}#{malt(num)}#{jack}.\n"
     when 10
-      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{man(num)}#{maiden(num)}#{cow(num)}#{dog(num)}#{cat(num)}#{rat(num)}#{malt}#{jack}.\n"
+      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{man(num)}#{maiden(num)}#{cow(num)}#{dog(num)}#{cat(num)}#{rat(num)}#{malt(num)}#{jack}.\n"
     when 11
-      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{man(num)}#{maiden(num)}#{cow(num)}#{dog(num)}#{cat(num)}#{rat(num)}#{malt}#{jack}.\n"
+      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{man(num)}#{maiden(num)}#{cow(num)}#{dog(num)}#{cat(num)}#{rat(num)}#{malt(num)}#{jack}.\n"
     when 12
-      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{man(num)}#{maiden(num)}#{cow(num)}#{dog(num)}#{cat(num)}#{rat(num)}#{malt}#{jack}.\n"
+      "#{intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{man(num)}#{maiden(num)}#{cow(num)}#{dog(num)}#{cat(num)}#{rat(num)}#{malt(num)}#{jack}.\n"
     end
   end
 
@@ -36,8 +36,10 @@ class House
     "house that Jack built"
   end
 
-  def malt
-    "malt that lay in the "
+  def malt(num)
+    if num >= 2
+      "malt that lay in the "
+    end
   end
 
   def rat(num)
