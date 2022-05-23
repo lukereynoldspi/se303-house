@@ -22,9 +22,9 @@ class House
     when 10
       "#{intro} #{rooster} #{priest} #{man} #{maiden} #{cow} #{dog} #{cat} #{rat} #{malt} #{jack}.\n"
     when 11
-      "#{intro} #{horse(num)}#{farmer} #{rooster} #{priest} #{man} #{maiden} #{cow} #{dog} #{cat} #{rat} #{malt} #{jack}.\n"
+      "#{intro} #{horse(num)}#{farmer(num)} #{rooster} #{priest} #{man} #{maiden} #{cow} #{dog} #{cat} #{rat} #{malt} #{jack}.\n"
     when 12
-      "#{intro} #{horse(num)} #{farmer} #{rooster} #{priest} #{man} #{maiden} #{cow} #{dog} #{cat} #{rat} #{malt} #{jack}.\n"
+      "#{intro} #{horse(num)} #{farmer(num)} #{rooster} #{priest} #{man} #{maiden} #{cow} #{dog} #{cat} #{rat} #{malt} #{jack}.\n"
     end
   end
 
@@ -72,8 +72,10 @@ class House
     "rooster that crowed in the morn that woke the"
   end
 
-  def farmer
-    "farmer sowing his corn that kept the"
+  def farmer(num)
+    if num >= 11
+      "farmer sowing his corn that kept the"
+    end
   end
 
   def horse(num)
