@@ -86,83 +86,83 @@ end
 
 class LineNumber
   
-  attr_reader :number
+  attr_reader :num
 
-  def initialize(number)
-    @number = number
+  def initialize(num)
+    @num = num
   end
 
   def intro
     "This is the "
   end
 
-  def jack(num)
+  def jack
     if num >= 1
       "house that Jack built"
     end
   end
 
-  def malt(num)
+  def malt
     if num >= 2
       "malt that lay in the "
     end
   end
 
-  def rat(num)
+  def rat
     if num >= 3
       "rat that ate the "
     end
   end
 
-  def cat(num)
+  def cat
     if num >= 4
       "cat that killed the "
     end
   end
 
-  def dog(num)
+  def dog
     if num >= 5
       "dog that worried the "
     end
   end
 
-  def cow(num)
+  def cow
     if num >= 6
       "cow with the crumpled horn that tossed the "
     end
   end
 
-  def maiden(num)
+  def maiden
     if num >= 7
       "maiden all forlorn that milked the "
     end
   end
 
-  def man(num)
+  def man
     if num >= 8
       "man all tattered and torn that kissed the "
     end
   end
 
-  def priest(num)
+  def priest
     if num >= 9
       "priest all shaven and shorn that married the "
     end
   end
 
-  def rooster(num)
+  def rooster
     if num >= 10
       "rooster that crowed in the morn that woke the "
     end
   end
 
-  def farmer(num)
+  def farmer
     if num >= 11
       "farmer sowing his corn that kept the "
     end
   end
 
-  def horse(num)
+  def horse
     if num == 12
       "horse and the hound and the horn that belonged to the "
     end
