@@ -1,7 +1,7 @@
 class House
   def line(num)
     line_number = LineNumber.new(num)
-    "#{line_number.intro}#{horse(num)}#{farmer(num)}#{rooster(num)}#{priest(num)}#{man(num)}#{maiden(num)}#{cow(num)}#{dog(num)}#{cat(num)}#{rat(num)}#{malt(num)}#{jack(num)}.\n"
+    "#{line_number.intro}#{line_number.horse}#{line_number.farmer}#{line_number.rooster}#{line_number.priest}#{line_number.man}#{line_number.maiden}#{line_number.cow}#{line_number.dog}#{line_number.cat}#{line_number.rat}#{line_number.malt}#{line_number.jack}.\n"
   end
 
   def intro
