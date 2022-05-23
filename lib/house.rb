@@ -93,3 +93,9 @@ class LineNumber
     end
   end
 end
+
+class PirateLineNumber < LineNumber
+  def intro
+    "Thar be the "
+  end
+end
