@@ -161,6 +161,12 @@ class LineNumber9 < LineNumber
   end
 end
 
+class LineNumber10 < LineNumber
+  def rooster
+    "rooster that crowed in the morn that woke the " 
+  end
+end
+
 class PirateLineNumber < LineNumber
   def intro
     "Thar be the "
