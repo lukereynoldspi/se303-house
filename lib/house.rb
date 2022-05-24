@@ -125,6 +125,12 @@ class LineNumber3 < LineNumber
   end
 end
 
+class LineNumber4 < LineNumber
+  def cat
+    "cat that killed the " 
+  end
+end
+
 class PirateLineNumber < LineNumber
   def intro
     "Thar be the "
