@@ -131,6 +131,12 @@ class LineNumber4 < LineNumber
   end
 end
 
+class LineNumber5 < LineNumber
+  def dog
+    "dog that worried the " 
+  end
+end
+
 class PirateLineNumber < LineNumber
   def intro
     "Thar be the "
