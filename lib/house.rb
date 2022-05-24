@@ -167,6 +167,12 @@ class LineNumber10 < LineNumber
   end
 end
 
+class LineNumber11 < LineNumber
+  def farmer
+    "farmer sowing his corn that kept the " 
+  end
+end
+
 class PirateLineNumber < LineNumber
   def intro
     "Thar be the "
