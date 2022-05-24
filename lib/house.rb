@@ -143,6 +143,12 @@ class LineNumber6 < LineNumber
   end
 end
 
+class LineNumber7 < LineNumber
+  def maiden
+    "maiden all forlorn that milked the " 
+  end
+end
+
 class PirateLineNumber < LineNumber
   def intro
     "Thar be the "
