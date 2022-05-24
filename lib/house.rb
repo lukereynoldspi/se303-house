@@ -149,6 +149,12 @@ class LineNumber7 < LineNumber
   end
 end
 
+class LineNumber8 < LineNumber
+  def man
+    "man all tattered and torn that kissed the " 
+  end
+end
+
 class PirateLineNumber < LineNumber
   def intro
     "Thar be the "
