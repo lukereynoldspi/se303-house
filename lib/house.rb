@@ -119,6 +119,12 @@ class LineNumber2 < LineNumber
   end
 end
 
+class LineNumber3 < LineNumber
+  def rat
+    "rat that ate the "
+  end
+end
+
 class PirateLineNumber < LineNumber
   def intro
     "Thar be the "
