@@ -13,7 +13,8 @@ class House
     "#{line_number.cat}"+
     "#{line_number.rat}"+
     "#{line_number.malt}"+
-    "#{line_number.jack}.\n"
+    "#{line_number.jack}"+
+    ".\n"
   end
 
   def recite
@@ -103,6 +104,12 @@ class LineNumber
     if num == 12
       "horse and the hound and the horn that belonged to the "
     end
+  end
+end
+
+class LineNumber1 < LineNumber
+  def jack
+    "house that Jack built"
   end
 end
 
