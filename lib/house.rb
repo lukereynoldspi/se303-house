@@ -155,6 +155,12 @@ class LineNumber8 < LineNumber
   end
 end
 
+class LineNumber9 < LineNumber
+  def priest
+    "priest all shaven and shorn that married the " 
+  end
+end
+
 class PirateLineNumber < LineNumber
   def intro
     "Thar be the "
