@@ -173,6 +173,12 @@ class LineNumber11 < LineNumber
   end
 end
 
+class LineNumber12 < LineNumber
+  def horse
+    "horse and the hound and the horn that belonged to the " 
+  end
+end
+
 class PirateLineNumber < LineNumber
   def intro
     "Thar be the "
