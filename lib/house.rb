@@ -113,6 +113,12 @@ class LineNumber1 < LineNumber
   end
 end
 
+class LineNumber2 < LineNumber
+  def malt
+    "malt that lay in the "
+  end
+end
+
 class PirateLineNumber < LineNumber
   def intro
     "Thar be the "
