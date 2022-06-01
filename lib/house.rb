@@ -180,6 +180,10 @@ class LineNumber7 < LineNumber
 end
 
 class LineNumber8 < LineNumber
+  def self.handles?(num)
+    number == 8
+  end
+
   def man
     "man all tattered and torn that kissed the " 
   end
