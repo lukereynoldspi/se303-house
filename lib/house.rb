@@ -5,14 +5,13 @@ class House
   end
   
   def line(num)
-    line_number = LineNumber.for(num)
-    intro = line_number.intro 
+    line = "#{@intro}"
     while (num > 0)
       line_number = LineNumber.for(num)
-      intro << line_number.phrase
+      line << line_number.phrase
       num = num - 1
     end
-    intro << ".\n"
+    line << ".\n"
   end
 
   def recite
