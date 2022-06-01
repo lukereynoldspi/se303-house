@@ -200,6 +200,10 @@ class LineNumber9 < LineNumber
 end
 
 class LineNumber10 < LineNumber
+  def self.handles?(num)
+    number == 10
+  end
+
   def rooster
     "rooster that crowed in the morn that woke the " 
   end
