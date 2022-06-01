@@ -210,6 +210,10 @@ class LineNumber10 < LineNumber
 end
 
 class LineNumber11 < LineNumber
+  def self.handles?(num)
+    number == 11
+  end
+
   def farmer
     "farmer sowing his corn that kept the " 
   end
