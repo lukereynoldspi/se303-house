@@ -18,7 +18,16 @@ class House
     1.upto(12).collect { |i| line(i) }.join("\n")
   end
 
-  def random_line(num)
+end
+
+class PirateHouse < House
+  def initialize(intro = "Thar be the ")
+    @intro = intro
+  end
+end
+
+class RandomHouse < House
+  def line(num)
     line = "#{@intro}"
     while (num > 1)
       random_phrase = rand(2..12)
@@ -29,12 +38,6 @@ class House
     line_number = LineNumber.for(num)
     line << line_number.phrase
     line << ".\n"
-  end
-end
-
-class PirateHouse < House
-  def initialize(intro = "Thar be the ")
-    @intro = intro
   end
 end
 
