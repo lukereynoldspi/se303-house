@@ -17,6 +17,19 @@ class House
   def recite
     1.upto(12).collect { |i| line(i) }.join("\n")
   end
+
+  def random_line(num)
+    line = "#{@intro}"
+    while (num > 1)
+      random_phrase = rand(2..12)
+      line_number = LineNumber.for(random_phrase)
+      line << line_number.phrase
+      num = num - 1
+    end
+    line_number = LineNumber.for(num)
+    line << line_number.phrase
+    line << ".\n"
+  end
 end
 
 class PirateHouse < House
