@@ -1,6 +1,6 @@
 class House
   def line(num)
-    line_number = LineNumber.new(num)
+    line_number = LineNumber.for(num)
     "#{line_number.intro}"+
     "#{line_number.horse}"+
     "#{line_number.farmer}"+
@@ -30,7 +30,25 @@ class LineNumber
     @num = num
   end
 
+  def self.for(num)
+    [LineNumber1,
+    LineNumber2,
+    LineNumber3,
+    LineNumber4,
+    LineNumber5,
+    LineNumber6,
+    LineNumber7,
+    LineNumber8,
+    LineNumber9,
+    LineNumber10,
+    LineNumber11,
+    LineNumber12,
+    LineNumber].find {|candidate| candidate.handles?(num)}.new(num)
+  end
 
+  def self.handles?(num)
+    True
+  end
 
   def intro
     "This is the "
@@ -111,7 +129,7 @@ end
 
 class LineNumber1 < LineNumber
   def self.handles?(num)
-    number == 1
+    num == 1
   end
 
   def jack
@@ -121,7 +139,7 @@ end
 
 class LineNumber2 < LineNumber
   def self.handles?(num)
-    number == 2
+    num == 2
   end
 
   def malt
@@ -131,7 +149,7 @@ end
 
 class LineNumber3 < LineNumber
   def self.handles?(num)
-    number == 3
+    num == 3
   end
 
   def rat
@@ -141,7 +159,7 @@ end
 
 class LineNumber4 < LineNumber
   def self.handles?(num)
-    number == 4
+    num == 4
   end
 
   def cat
@@ -151,7 +169,7 @@ end
 
 class LineNumber5 < LineNumber
   def self.handles?(num)
-    number == 5
+    num == 5
   end
 
   def dog
@@ -161,7 +179,7 @@ end
 
 class LineNumber6 < LineNumber
   def self.handles?(num)
-    number == 6
+    num == 6
   end
 
   def cow
@@ -171,7 +189,7 @@ end
 
 class LineNumber7 < LineNumber
   def self.handles?(num)
-    number == 7
+    num == 7
   end
 
   def maiden
@@ -181,7 +199,7 @@ end
 
 class LineNumber8 < LineNumber
   def self.handles?(num)
-    number == 8
+    num == 8
   end
 
   def man
@@ -191,7 +209,7 @@ end
 
 class LineNumber9 < LineNumber
   def self.handles?(num)
-    number == 9
+    num == 9
   end
 
   def priest
@@ -201,7 +219,7 @@ end
 
 class LineNumber10 < LineNumber
   def self.handles?(num)
-    number == 10
+    num == 10
   end
 
   def rooster
@@ -211,7 +229,7 @@ end
 
 class LineNumber11 < LineNumber
   def self.handles?(num)
-    number == 11
+    num == 11
   end
 
   def farmer
@@ -221,7 +239,7 @@ end
 
 class LineNumber12 < LineNumber
   def self.handles?(num)
-    number == 12
+    num == 12
   end
 
   def horse
