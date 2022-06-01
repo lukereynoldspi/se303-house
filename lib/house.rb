@@ -1,6 +1,6 @@
 class House
   def line(num)
-    line_number = LineNumber.new(num)
+    line_number = LineNumber.for(num)
     "#{line_number.intro}"+
     "#{line_number.horse}"+
     "#{line_number.farmer}"+
@@ -25,6 +25,17 @@ end
 class LineNumber
   
   attr_reader :num
+
+  def self.for(num)
+    case num
+    when 1
+      LineNumber1
+    when 2
+      LineNumber2
+    else
+      LineNumber
+    end.new(num)
+  end
 
   def initialize(num)
     @num = num
