@@ -140,6 +140,10 @@ class LineNumber3 < LineNumber
 end
 
 class LineNumber4 < LineNumber
+  def self.handles?(num)
+    number == 4
+  end
+
   def cat
     "cat that killed the " 
   end
