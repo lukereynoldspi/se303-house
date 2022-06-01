@@ -1,7 +1,13 @@
 class House
   def line(num)
     line_number = LineNumber.for(num)
-    line_number.intro
+    intro = line_number.intro 
+    while (num > 0)
+      line_number = LineNumber.for(num)
+      intro << line_number.phrase
+      num = num - 1
+    end
+    intro << ".\n"
   end
 
   def recite
@@ -41,77 +47,6 @@ class LineNumber
     "This is the "
   end
 
-  def jack
-    if num >= 1
-      "house that Jack built"
-    end
-  end
-
-  def malt
-    if num >= 2
-      "malt that lay in the "
-    end
-  end
-
-  def rat
-    if num >= 3
-      "rat that ate the "
-    end
-  end
-
-  def cat
-    if num >= 4
-      "cat that killed the "
-    end
-  end
-
-  def dog
-    if num >= 5
-      "dog that worried the "
-    end
-  end
-
-  def cow
-    if num >= 6
-      "cow with the crumpled horn that tossed the "
-    end
-  end
-
-  def maiden
-    if num >= 7
-      "maiden all forlorn that milked the "
-    end
-  end
-
-  def man
-    if num >= 8
-      "man all tattered and torn that kissed the "
-    end
-  end
-
-  def priest
-    if num >= 9
-      "priest all shaven and shorn that married the "
-    end
-  end
-
-  def rooster
-    if num >= 10
-      "rooster that crowed in the morn that woke the "
-    end
-  end
-
-  def farmer
-    if num >= 11
-      "farmer sowing his corn that kept the "
-    end
-  end
-
-  def horse
-    if num == 12
-      "horse and the hound and the horn that belonged to the "
-    end
-  end
 end
 
 class LineNumber1 < LineNumber
@@ -119,7 +54,7 @@ class LineNumber1 < LineNumber
     num == 1
   end
 
-  def jack
+  def phrase
     "house that Jack built"
   end
 end
@@ -129,7 +64,7 @@ class LineNumber2 < LineNumber
     num == 2
   end
 
-  def malt
+  def phrase
     "malt that lay in the "
   end
 end
@@ -139,7 +74,7 @@ class LineNumber3 < LineNumber
     num == 3
   end
 
-  def rat
+  def phrase
     "rat that ate the "
   end
 end
@@ -149,7 +84,7 @@ class LineNumber4 < LineNumber
     num == 4
   end
 
-  def cat
+  def phrase
     "cat that killed the " 
   end
 end
@@ -159,7 +94,7 @@ class LineNumber5 < LineNumber
     num == 5
   end
 
-  def dog
+  def phrase
     "dog that worried the " 
   end
 end
@@ -169,7 +104,7 @@ class LineNumber6 < LineNumber
     num == 6
   end
 
-  def cow
+  def phrase
     "cow with the crumpled horn that tossed the " 
   end
 end
@@ -179,7 +114,7 @@ class LineNumber7 < LineNumber
     num == 7
   end
 
-  def maiden
+  def phrase
     "maiden all forlorn that milked the " 
   end
 end
@@ -189,7 +124,7 @@ class LineNumber8 < LineNumber
     num == 8
   end
 
-  def man
+  def phrase
     "man all tattered and torn that kissed the " 
   end
 end
@@ -199,7 +134,7 @@ class LineNumber9 < LineNumber
     num == 9
   end
 
-  def priest
+  def phrase
     "priest all shaven and shorn that married the " 
   end
 end
@@ -209,7 +144,7 @@ class LineNumber10 < LineNumber
     num == 10
   end
 
-  def rooster
+  def phrase
     "rooster that crowed in the morn that woke the " 
   end
 end
@@ -219,7 +154,7 @@ class LineNumber11 < LineNumber
     num == 11
   end
 
-  def farmer
+  def phrase
     "farmer sowing his corn that kept the " 
   end
 end
@@ -229,7 +164,7 @@ class LineNumber12 < LineNumber
     num == 12
   end
 
-  def horse
+  def phrase
     "horse and the hound and the horn that belonged to the " 
   end
 end
