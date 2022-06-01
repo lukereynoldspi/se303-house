@@ -1,4 +1,9 @@
 class House
+  attr_reader :intro
+  def initialize(intro = "This is the ")
+    @intro = intro
+  end
+  
   def line(num)
     line_number = LineNumber.for(num)
     intro = line_number.intro 
@@ -166,11 +171,5 @@ class LineNumber12 < LineNumber
 
   def phrase
     "horse and the hound and the horn that belonged to the " 
-  end
-end
-
-class PirateLineNumber < LineNumber
-  def intro
-    "Thar be the "
   end
 end
