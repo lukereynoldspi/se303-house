@@ -113,13 +113,17 @@ class LineNumber1 < LineNumber
   def self.handles?(num)
     number == 1
   end
-  
+
   def jack
     "house that Jack built"
   end
 end
 
 class LineNumber2 < LineNumber
+  def self.handles?(num)
+    number == 2
+  end
+
   def malt
     "malt that lay in the "
   end
