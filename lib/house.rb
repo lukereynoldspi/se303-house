@@ -220,6 +220,10 @@ class LineNumber11 < LineNumber
 end
 
 class LineNumber12 < LineNumber
+  def self.handles?(num)
+    number == 12
+  end
+
   def horse
     "horse and the hound and the horn that belonged to the " 
   end
