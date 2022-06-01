@@ -130,6 +130,10 @@ class LineNumber2 < LineNumber
 end
 
 class LineNumber3 < LineNumber
+  def self.handles?(num)
+    number == 3
+  end
+
   def rat
     "rat that ate the "
   end
