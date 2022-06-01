@@ -170,6 +170,10 @@ class LineNumber6 < LineNumber
 end
 
 class LineNumber7 < LineNumber
+  def self.handles?(num)
+    number == 7
+  end
+
   def maiden
     "maiden all forlorn that milked the " 
   end
