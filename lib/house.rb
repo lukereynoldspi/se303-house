@@ -47,10 +47,6 @@ class LineNumber
     True
   end
 
-  def intro
-    "This is the "
-  end
-
 end
 
 class LineNumber1 < LineNumber
