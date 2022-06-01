@@ -190,6 +190,10 @@ class LineNumber8 < LineNumber
 end
 
 class LineNumber9 < LineNumber
+  def self.handles?(num)
+    number == 9
+  end
+
   def priest
     "priest all shaven and shorn that married the " 
   end
