@@ -19,6 +19,12 @@ class House
   end
 end
 
+class PirateHouse < House
+  def initialize(intro = "Thar be the ")
+    @intro = intro
+  end
+end
+
 class LineNumber
   
   attr_reader :num
