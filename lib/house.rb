@@ -1,20 +1,7 @@
 class House
   def line(num)
     line_number = LineNumber.for(num)
-    "#{line_number.intro}"+
-    "#{line_number.horse}"+
-    "#{line_number.farmer}"+
-    "#{line_number.rooster}"+
-    "#{line_number.priest}"+
-    "#{line_number.man}"+
-    "#{line_number.maiden}"+
-    "#{line_number.cow}"+
-    "#{line_number.dog}"+
-    "#{line_number.cat}"+
-    "#{line_number.rat}"+
-    "#{line_number.malt}"+
-    "#{line_number.jack}"+
-    ".\n"
+    line_number.intro
   end
 
   def recite
