@@ -110,6 +110,10 @@ class LineNumber
 end
 
 class LineNumber1 < LineNumber
+  def self.handles?(num)
+    number == 1
+  end
+  
   def jack
     "house that Jack built"
   end
