@@ -160,6 +160,10 @@ class LineNumber5 < LineNumber
 end
 
 class LineNumber6 < LineNumber
+  def self.handles?(num)
+    number == 6
+  end
+
   def cow
     "cow with the crumpled horn that tossed the " 
   end
