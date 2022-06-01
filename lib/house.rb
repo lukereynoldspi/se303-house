@@ -150,6 +150,10 @@ class LineNumber4 < LineNumber
 end
 
 class LineNumber5 < LineNumber
+  def self.handles?(num)
+    number == 5
+  end
+
   def dog
     "dog that worried the " 
   end
