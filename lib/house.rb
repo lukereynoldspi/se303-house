@@ -180,11 +180,11 @@ class LineNumber6 < LineNumber
   end
 
   def subject
-    "cow"
+    "cow with the crumpled horn"
   end
 
   def verb
-    "with the crumpled horn that tossed"
+    "tossed"
   end
 
   LineNumber.register(self)
@@ -197,6 +197,14 @@ class LineNumber7 < LineNumber
 
   def phrase
     "maiden all forlorn that milked the " 
+  end
+
+  def subject
+    "maiden all forlorn"
+  end
+
+  def verb
+    "milked"
   end
 
   LineNumber.register(self)
