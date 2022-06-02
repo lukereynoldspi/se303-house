@@ -299,5 +299,13 @@ class LineNumber12 < LineNumber
     "horse and the hound and the horn that belonged to the " 
   end
 
+  def subject
+    "horse and the hound and the horn"
+  end
+
+  def verb
+    "belonged to"
+  end
+
   LineNumber.register(self)
 end
