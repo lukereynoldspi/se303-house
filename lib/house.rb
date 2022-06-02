@@ -119,6 +119,14 @@ class LineNumber3 < LineNumber
     "rat that ate the "
   end
 
+  def subject
+    "rat"
+  end
+
+  def verb
+    "ate "
+  end
+  
   LineNumber.register(self)
 end
 
