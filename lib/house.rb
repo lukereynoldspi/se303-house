@@ -27,16 +27,18 @@ class PirateHouse < House
 end
 
 class RandomHouse < House
+  def initialize(intro = "This is the ")
+    @intro = intro
+    @line_number = LineNumber.shuffle
+  end
+
   def line(num)
     line = "#{@intro}"
-    while (num > 1)
-      random_phrase = rand(2..12)
-      line_number = LineNumber.for(random_phrase)
-      line << line_number.phrase
+    while (num > 0)
+      random_line = @line_number[num - 1].new
+      line << random_line.phrase
       num = num - 1
     end
-    line_number = LineNumber.for(num)
-    line << line_number.phrase
     line << ".\n"
   end
 end
@@ -45,16 +47,16 @@ class LineNumber
   
   attr_reader :num
 
-  def initialize(num)
+  def initialize(num = 0)
     @num = num
-  end
-
-  def self.for(num)
-    registry.find {|candidate| candidate.handles?(num)}.new(num)
   end
 
   def self.handles?(num)
     True
+  end
+
+  def self.for(num)
+    registry.find {|candidate| candidate.handles?(num)}.new(num)
   end
 
   def self.registry
@@ -63,6 +65,12 @@ class LineNumber
 
   def self.register(candidate)
     registry.prepend(candidate)
+  end
+
+  def self.shuffle
+    registry.delete(LineNumber1)
+    registry.shuffle
+    registry.unshift(LineNumber1)
   end
 
 end
