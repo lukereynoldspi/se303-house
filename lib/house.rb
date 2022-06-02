@@ -104,7 +104,7 @@ class LineNumber2 < LineNumber
   end
 
   def verb
-    "lay in "
+    "lay in"
   end
 
   LineNumber.register(self)
@@ -124,9 +124,9 @@ class LineNumber3 < LineNumber
   end
 
   def verb
-    "ate "
+    "ate"
   end
-  
+
   LineNumber.register(self)
 end
 
@@ -137,6 +137,14 @@ class LineNumber4 < LineNumber
 
   def phrase
     "cat that killed the " 
+  end
+
+  def subject
+    "cat"
+  end
+
+  def verb
+    "killed"
   end
 
   LineNumber.register(self)
