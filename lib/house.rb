@@ -34,6 +34,7 @@ end
 class PirateHouse < House
   def initialize(intro = "Thar be the ")
     @intro = intro
+    @line_numbers = LineNumber.shuffle
   end
 end
 
