@@ -259,6 +259,14 @@ class LineNumber10 < LineNumber
     "rooster that crowed in the morn that woke the " 
   end
 
+  def subject
+    "rooster that crowed in the morn"
+  end
+
+  def verb
+    "woke"
+  end
+
   LineNumber.register(self)
 end
 
