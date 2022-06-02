@@ -179,6 +179,14 @@ class LineNumber6 < LineNumber
     "cow with the crumpled horn that tossed the " 
   end
 
+  def subject
+    "cow"
+  end
+
+  def verb
+    "with the crumpled horn that tossed"
+  end
+
   LineNumber.register(self)
 end
 
