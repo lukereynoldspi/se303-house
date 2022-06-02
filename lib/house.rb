@@ -2,13 +2,24 @@ class House
   attr_reader :intro
   def initialize(intro = "This is the ")
     @intro = intro
+    @line_numbers = LineNumber.shuffle
   end
   
   def line(num)
     line = "#{@intro}"
     while (num > 0)
-      line_number = LineNumber.for(num)
-      line << line_number.phrase
+      verse = LineNumber.for(num)
+      line << verse.phrase
+      num = num - 1
+    end
+    line << ".\n"
+  end
+
+  def random_line(num)
+    line = "#{@intro}"
+    while (num > 0)
+      verse = @line_numbers[num - 1].new
+      line << verse.phrase
       num = num - 1
     end
     line << ".\n"
@@ -23,23 +34,6 @@ end
 class PirateHouse < House
   def initialize(intro = "Thar be the ")
     @intro = intro
-  end
-end
-
-class RandomHouse < House
-  def initialize(intro = "This is the ")
-    @intro = intro
-    @line_number = LineNumber.shuffle
-  end
-
-  def line(num)
-    line = "#{@intro}"
-    while (num > 0)
-      random_line = @line_number[num - 1].new
-      line << random_line.phrase
-      num = num - 1
-    end
-    line << ".\n"
   end
 end
 
