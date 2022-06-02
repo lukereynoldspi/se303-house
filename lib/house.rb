@@ -239,6 +239,14 @@ class LineNumber9 < LineNumber
     "priest all shaven and shorn that married the " 
   end
 
+  def subject
+    "priest all shaven and shorn"
+  end
+
+  def verb
+    "married"
+  end
+
   LineNumber.register(self)
 end
 
