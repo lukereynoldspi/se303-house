@@ -279,6 +279,14 @@ class LineNumber11 < LineNumber
     "farmer sowing his corn that kept the " 
   end
 
+  def subject
+    "farmer sowing his corn"
+  end
+
+  def verb
+    "kept"
+  end
+
   LineNumber.register(self)
 end
 
