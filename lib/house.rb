@@ -159,6 +159,14 @@ class LineNumber5 < LineNumber
     "dog that worried the " 
   end
 
+  def subject
+    "dog"
+  end
+
+  def verb
+    "worried"
+  end
+
   LineNumber.register(self)
 end
 
