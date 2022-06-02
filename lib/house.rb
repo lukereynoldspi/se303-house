@@ -219,6 +219,14 @@ class LineNumber8 < LineNumber
     "man all tattered and torn that kissed the " 
   end
 
+  def subject
+    "man all tattered and torn"
+  end
+
+  def verb
+    "kissed"
+  end
+
   LineNumber.register(self)
 end
 
