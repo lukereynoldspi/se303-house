@@ -50,18 +50,7 @@ class LineNumber
   end
 
   def self.for(num)
-    [LineNumber1,
-    LineNumber2,
-    LineNumber3,
-    LineNumber4,
-    LineNumber5,
-    LineNumber6,
-    LineNumber7,
-    LineNumber8,
-    LineNumber9,
-    LineNumber10,
-    LineNumber11,
-    LineNumber12].find {|candidate| candidate.handles?(num)}.new(num)
+    registry.find {|candidate| candidate.handles?(num)}.new(num)
   end
 
   def self.handles?(num)
@@ -86,6 +75,8 @@ class LineNumber1 < LineNumber
   def phrase
     "house that Jack built"
   end
+
+  LineNumber.register(self)
 end
 
 class LineNumber2 < LineNumber
@@ -96,6 +87,8 @@ class LineNumber2 < LineNumber
   def phrase
     "malt that lay in the "
   end
+
+  LineNumber.register(self)
 end
 
 class LineNumber3 < LineNumber
@@ -106,6 +99,8 @@ class LineNumber3 < LineNumber
   def phrase
     "rat that ate the "
   end
+
+  LineNumber.register(self)
 end
 
 class LineNumber4 < LineNumber
@@ -116,6 +111,8 @@ class LineNumber4 < LineNumber
   def phrase
     "cat that killed the " 
   end
+
+  LineNumber.register(self)
 end
 
 class LineNumber5 < LineNumber
@@ -126,6 +123,8 @@ class LineNumber5 < LineNumber
   def phrase
     "dog that worried the " 
   end
+
+  LineNumber.register(self)
 end
 
 class LineNumber6 < LineNumber
@@ -136,6 +135,8 @@ class LineNumber6 < LineNumber
   def phrase
     "cow with the crumpled horn that tossed the " 
   end
+
+  LineNumber.register(self)
 end
 
 class LineNumber7 < LineNumber
@@ -146,6 +147,8 @@ class LineNumber7 < LineNumber
   def phrase
     "maiden all forlorn that milked the " 
   end
+
+  LineNumber.register(self)
 end
 
 class LineNumber8 < LineNumber
@@ -156,6 +159,8 @@ class LineNumber8 < LineNumber
   def phrase
     "man all tattered and torn that kissed the " 
   end
+
+  LineNumber.register(self)
 end
 
 class LineNumber9 < LineNumber
@@ -166,6 +171,8 @@ class LineNumber9 < LineNumber
   def phrase
     "priest all shaven and shorn that married the " 
   end
+
+  LineNumber.register(self)
 end
 
 class LineNumber10 < LineNumber
@@ -176,6 +183,8 @@ class LineNumber10 < LineNumber
   def phrase
     "rooster that crowed in the morn that woke the " 
   end
+
+  LineNumber.register(self)
 end
 
 class LineNumber11 < LineNumber
@@ -186,6 +195,8 @@ class LineNumber11 < LineNumber
   def phrase
     "farmer sowing his corn that kept the " 
   end
+
+  LineNumber.register(self)
 end
 
 class LineNumber12 < LineNumber
@@ -196,4 +207,6 @@ class LineNumber12 < LineNumber
   def phrase
     "horse and the hound and the horn that belonged to the " 
   end
+
+  LineNumber.register(self)
 end
