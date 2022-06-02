@@ -79,6 +79,14 @@ class LineNumber1 < LineNumber
     "house that Jack built"
   end
 
+  def subject
+    "house"
+  end
+
+  def verb
+    "Jack built"
+  end
+
   LineNumber.register(self)
 end
 
