@@ -99,6 +99,14 @@ class LineNumber2 < LineNumber
     "malt that lay in the "
   end
 
+  def subject
+    "malt"
+  end
+
+  def verb
+    "lay in "
+  end
+
   LineNumber.register(self)
 end
 
