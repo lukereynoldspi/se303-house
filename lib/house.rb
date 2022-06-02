@@ -61,12 +61,19 @@ class LineNumber
     LineNumber9,
     LineNumber10,
     LineNumber11,
-    LineNumber12,
-    LineNumber].find {|candidate| candidate.handles?(num)}.new(num)
+    LineNumber12].find {|candidate| candidate.handles?(num)}.new(num)
   end
 
   def self.handles?(num)
     True
+  end
+
+  def self.registry
+    @registry ||= []
+  end
+
+  def self.register(candidate)
+    registry.prepend(candidate)
   end
 
 end
