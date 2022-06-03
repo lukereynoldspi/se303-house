@@ -52,6 +52,8 @@ class PirateHouse < House
   def initialize(intro = "Thar be the ")
     @intro = intro
     @line_numbers = LineNumber.shuffle
+    @subjects = LineNumber.shuffle_subject
+    @verbs = LineNumber.shuffle_verb
   end
 end
 
