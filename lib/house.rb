@@ -9,7 +9,11 @@ class House
     line = "#{@intro}"
     while (num > 0)
       verse = LineNumber.for(num)
-      line << verse.phrase
+      if num != 1
+        line << ("#{verse.subject} that #{verse.verb} the ")
+      else
+        line << ("#{verse.subject} that #{verse.verb}" )
+      end
       num = num - 1
     end
     line << ".\n"
