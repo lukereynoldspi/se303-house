@@ -21,15 +21,13 @@ class House
 
   def random_line(num)
     line = "#{@intro}"
-    while (num > 0)
+    while (num > 1)
       verse = @line_numbers[num - 1].new
-      if num != 1
-        line << ("#{verse.subject} that #{verse.verb} the ")
-      else
-        line << ("#{verse.subject} that #{verse.verb}")
-      end
+      line << ("#{verse.subject} that #{verse.verb} the ")
       num = num - 1
     end
+    verse = @line_numbers[num - 1].new
+    line << ("#{verse.subject} that #{verse.verb}")
     line << ".\n"
   end
 
@@ -116,10 +114,6 @@ class LineNumber1 < LineNumber
     num == 1
   end
 
-  def phrase
-    "house that Jack built"
-  end
-
   def subject
     "house"
   end
@@ -128,16 +122,11 @@ class LineNumber1 < LineNumber
     "Jack built"
   end
 
-  LineNumber.register(self)
 end
 
 class LineNumber2 < LineNumber
   def self.handles?(num)
     num == 2
-  end
-
-  def phrase
-    "malt that lay in the "
   end
 
   def subject
@@ -156,10 +145,6 @@ class LineNumber3 < LineNumber
     num == 3
   end
 
-  def phrase
-    "rat that ate the "
-  end
-
   def subject
     "rat"
   end
@@ -174,10 +159,6 @@ end
 class LineNumber4 < LineNumber
   def self.handles?(num)
     num == 4
-  end
-
-  def phrase
-    "cat that killed the " 
   end
 
   def subject
@@ -196,10 +177,6 @@ class LineNumber5 < LineNumber
     num == 5
   end
 
-  def phrase
-    "dog that worried the " 
-  end
-
   def subject
     "dog"
   end
@@ -214,10 +191,6 @@ end
 class LineNumber6 < LineNumber
   def self.handles?(num)
     num == 6
-  end
-
-  def phrase
-    "cow with the crumpled horn that tossed the " 
   end
 
   def subject
@@ -236,10 +209,6 @@ class LineNumber7 < LineNumber
     num == 7
   end
 
-  def phrase
-    "maiden all forlorn that milked the " 
-  end
-
   def subject
     "maiden all forlorn"
   end
@@ -254,10 +223,6 @@ end
 class LineNumber8 < LineNumber
   def self.handles?(num)
     num == 8
-  end
-
-  def phrase
-    "man all tattered and torn that kissed the " 
   end
 
   def subject
@@ -276,10 +241,6 @@ class LineNumber9 < LineNumber
     num == 9
   end
 
-  def phrase
-    "priest all shaven and shorn that married the " 
-  end
-
   def subject
     "priest all shaven and shorn"
   end
@@ -294,10 +255,6 @@ end
 class LineNumber10 < LineNumber
   def self.handles?(num)
     num == 10
-  end
-
-  def phrase
-    "rooster that crowed in the morn that woke the " 
   end
 
   def subject
@@ -316,10 +273,6 @@ class LineNumber11 < LineNumber
     num == 11
   end
 
-  def phrase
-    "farmer sowing his corn that kept the " 
-  end
-
   def subject
     "farmer sowing his corn"
   end
@@ -334,10 +287,6 @@ end
 class LineNumber12 < LineNumber
   def self.handles?(num)
     num == 12
-  end
-
-  def phrase
-    "horse and the hound and the horn that belonged to the " 
   end
 
   def subject
