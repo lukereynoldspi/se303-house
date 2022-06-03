@@ -3,12 +3,26 @@ class House
   def initialize(intro = "This is the ")
     @intro = intro
     @line_numbers = LineNumber.shuffle
+    # @subjects = LineNumber.shuffle_subject
+    # @verbs = LineNumber.shuffle_verb
   end
   
   def line(num)
     line = "#{@intro}"
-    while (num > 0)
+    while (num > 1)
       verse = LineNumber.for(num)
+      line << ("#{verse.subject} that #{verse.verb} the ")
+      num = num - 1
+    end
+    verse = LineNumber.for(num)
+    line << ("#{verse.subject} that #{verse.verb}")
+    line << ".\n"
+  end
+
+  def random_line(num)
+    line = "#{@intro}"
+    while (num > 0)
+      verse = @line_numbers[num - 1].new
       if num != 1
         line << ("#{verse.subject} that #{verse.verb} the ")
       else
@@ -19,7 +33,7 @@ class House
     line << ".\n"
   end
 
-  def random_line(num)
+  def random_subject_verb(num)
     line = "#{@intro}"
     while (num > 0)
       verse = @line_numbers[num - 1].new
@@ -76,6 +90,25 @@ class LineNumber
     registry.unshift(LineNumber1)
   end
 
+  # def self.shuffle_subject
+  #   subjects = []
+  #   registry.delete(LineNumber1)
+  #   for line_number in registry do
+  #     subjects.append(line_number.new.subject)
+  #   end
+  #   subjects.shuffle
+  #   #subjects.unshift(LineNumber1.subject)
+  # end
+
+  # def self.shuffle_verb
+  #   verbs = []
+  #   registry.delete(LineNumber1)
+  #   for line_number in registry do
+  #     verbs.append(line_number.new.verb)
+  #   end
+  #   verbs.shuffle
+  #   #verbs.unshift(LineNumber1.verb)
+  # end
 end
 
 class LineNumber1 < LineNumber
