@@ -57,20 +57,6 @@ class PirateHouse < House
   end
 end
 
-class RandomHouse < House
-  def line(num)
-    line = "#{@intro}"
-    while (num > 1)
-      verse = @line_numbers[num - 1].new
-      line << ("#{verse.subject} that #{verse.verb} the ")
-      num = num - 1
-    end
-    verse = @line_numbers[num - 1].new
-    line << ("#{verse.subject} that #{verse.verb}")
-    line << ".\n"
-  end
-end
-
 class LineNumber
   
   attr_reader :num
